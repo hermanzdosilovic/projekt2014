@@ -1,21 +1,21 @@
 Projekt2014
 ===========
 
-Solution of project assignment written in *Java* for class [*Discrete Mathematics 1*](http://en.wikipedia.org/wiki/Discrete_mathematics) of my second semester on [Faculty of Electrical Engineering and Computing (FER)](http://www.fer.unizg.hr/en) in [Zagreb](http://en.wikipedia.org/wiki/Zagreb).
+Solution of project assignment written in *Java* for class [*Concrete Mathematics 1*](http://en.wikipedia.org/wiki/Concrete_Mathematics) of my second semester on [Faculty of Electrical Engineering and Computing (FER)](http://www.fer.unizg.hr/en) in [Zagreb](http://en.wikipedia.org/wiki/Zagreb).
 
 Problem description
 -------------------
-In a array of digits `1, 2, 3, 4, 5, 6, 7, 8, 9` you need set operators (8 of them) between digits so that result always equals `2014`. Operations of same rank are evaluated from left to right.
+In a array of digits `1, 2, 3, 4, 5, 6, 7, 8, 9` you need to set operators (8 of them) between digits so that the result always equals `2014`. Operations of same rank are evaluated from left to right.
 
 ###Operations that you can use
 * `+` - additon
-* `-` - substraction
+* `-` - subtraction
 * `*` - multiplication
 * `/` - division
 * `^` - exponentiation
-* `|` - concatanation
+* `|` - concatenation
 
-	__Concatanation example:__
+	__Concatenation example:__
 	* `1` `|` `2` can become `12`
 	* `4` `|` `5` `|` `6` can become `456`
 
@@ -32,7 +32,7 @@ For `2010`, `2011` and `2012` we can have something like:
 	-12*3+4^5*(-6+7-8+9) = 2012
 	
 ###Extra operation
-* `_` - you can write numbers in differet base
+* `_` - you can write numbers in different base
 
 For `2010` we can have something like:
 
@@ -41,7 +41,7 @@ For `2010` we can have something like:
 
 ###Important Notes
 * Different representations that depend on position of sign in multiplication are considered identical.
-	* `1-2*(3-4)` is the same as `1-2*(-3+4)`
+	* `1-2*(3-4)` is the same as `1+2*(-3+4)`
 * Expressions based on properties of `1` are considered different.
 	* `1^23` is the same as `1^(2*3)` and is the same as `1^(2/3)` and `1^(2^3)`.
 * You are allowed to use *base operation* to *lose* digits.
@@ -51,8 +51,8 @@ For `2010` we can have something like:
 About my solution
 -----------------
 I found `5768` expressions (check *output.txt* file) that equal to `2014`. But I made few changes in problem definition.
-###Concatanation `|`
-Concatanation operation has one additional property. It can concat two or more expressions.
+###Concatenation `|`
+concatenation operation has one additional property. It can concat two or more expressions.
 	
 	(1+2)(3*4) = 312
 	(-1-2)(3+4) = -37
